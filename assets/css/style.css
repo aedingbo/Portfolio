@@ -3,7 +3,7 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777777;
-  background: url("../images/concrete_seamless.png");
+  background: url("../images/coding.jpg");
 }
 
 * {
@@ -35,7 +35,7 @@ h2,
 h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
-  color: #000080;
+  color: #02075d;
 }
 
 h1 {
@@ -74,7 +74,7 @@ h3 {
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  background: #000080;
+  background: #02075d;
 }
 
 nav {
@@ -150,7 +150,7 @@ h3, h2 {
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-  background: #000080;
+  background: #02075d;
   border-bottom: 0;
 }
 
@@ -198,72 +198,45 @@ input[type=submit] {
   font-size: 18px;
   color: #ffffff;
   cursor: pointer;
-  background: #000080;
+  background: #02075d;
   border: 0 none;
 }
 
-@media only screen and (max-width:980px){
-  .container{
-      padding: 0 20px;
-      max-width: 768px;
-  }
-  #main-container{
-      padding-top: 130px;
-  }
-  .main-section{
-    max-width: 420px;
-  }
-  .auth-image{
-    width: 100%;
-    margin-bottom: 20px;
+@media screen and (max-width: 980px) {
+  .main-section {
+    width: 66%;
+    
+    margin-bottom: 200px
   }
 }
 
-@media only screen {max-width: 768px} {
-    .main-section, .sidebar {
-      max-width: 100%;
-    }
-    #main-container{
-      overflow: auto;
-    }
-    .sidebar{
-      margin-bottom: 40px;
-    }
-    .work{
-      width:47%;
-      margin-bottom: 10px;
-    }
-    .work:nth-child(even) {
-      margin-right: 0;
-    }
-    .work:nth-child(odd){
-      float: right;
-    }
-    .auth-image{
-      width: 50%;
-    }
+@media screen and (max-width: 768px) {
+.main-section {
+  
+  width: 100%;
+  max-width: 960px;
+  margin-bottom: 200px;
+ 
+}
+}
+
+@media screen and (max-width: 640px) {
+  #logo {
+      float: none;
+      width: 100%;
+      padding: 30px;
+      text-align: center;
   }
 
-@media only screen (max-width: 640px) {
-  #masthead{
-    position:static;
-    margin-bottom: 20px;
-  }
-  header.container {
-    padding: 0;
-  }
-  #logo, .work, .auth-image{
+  nav {
+    float: none;
     width: 100%;
-  }
-  nav{
     text-align: center;
-    width: 100%;
-    margin: 15px 0;
   }
-  nav a {
-    width: 30%;
-    padding-left: 0;
-    padding-right: 0;
+
+  .auth-image {
+    float: none;
+    width: 100%
   }
 }
 
